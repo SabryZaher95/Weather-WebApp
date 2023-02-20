@@ -1,0 +1,41 @@
+:root{
+    --main-color: #1e202b;
+    --mask-color: rgba(13, 110, 253, 0.6);
+}
+
+body{
+    background-color: var(--main-color);
+}
+
+.h-300{
+    height: 300px;
+}
+
+.weather-data{
+    background-image: url('../images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+}
+
+.weather-data .overlay{
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+
+.card-body{
+    background-color: #323544;
+}
+
+input[type="search"], input[type="email"]{
+    background-color: var(--main-color);
+}
+
+input[type="search"]:focus, input[type="email"]:focus{
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.card{
+    min-height: 200px;
+}

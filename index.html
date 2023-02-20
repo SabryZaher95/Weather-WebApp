@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="vh-100">
+    <!--------------------Navbar----------------------->
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container">
+        <div class="logo">
+          <img src="./images/logo.png" alt="logo" class="w-25 me-3">
+          <a class="navbar-brand text-white" href="#">Weather</a>
+        </div>  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse py-4" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-5">
+              <a class="nav-link text-white active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link text-white" href="#">News</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link text-white" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link text-white" href="#">Photos</a>
+            </li>
+            <li class="nav-item me-5">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+  <!-----------------End Navbar---------------------->
+  <section class="weather-data">
+      <div class="overlay pt-5 pb-5">
+          <div class="container">
+              <div class="d-flex mb-5">
+                  <input class="form-control me-2 text-white rounded-pill py-3" id="search" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-primary rounded-5 px-5" type="submit" id="findBtn">Find</button>
+              </div>
+              <!-- <p id="test" class="text-white">dddd</p> -->
+              <div class="row mt-5 gx-1 gy-3">
+                <div class="col-lg-4 col-md-6">
+                    <div class="today-weather card border-0 h-300" id="today">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="later-weather card border-0 h-300" id="tomorrow">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <div class="later-weather card border-0 h-300" id="later">
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  </header>
+  <footer class="bg-dark py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 mb-5">
+          <div class="d-flex">
+            <input type="email" name="email" id="email" class="form-control me-2 rounded-pill py-3 text-white" placeholder="...">
+            <button type="submit" class="btn btn-primary rounded-5">Subscribe</button>
+          </div>
+        </div>
+        <p class="lead text-light">Copyright 2023 Company name. Designed by SZ. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
